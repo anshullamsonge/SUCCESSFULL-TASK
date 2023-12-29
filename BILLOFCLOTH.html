@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOTHING SHOP</title>
+    <style>
+        body{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>FASHION MALL </h1>
+    <input type="button" onclick="shop()" value="CLICK HERE">
+   </center>
+    <script>
+        function shop()
+        {
+            var items1=prompt("ENTER YOUR Q. FOR  SHIRTS");
+            var items2=prompt("ENTER YOUR Q. FOR  TSHIRTS");
+            var items3=prompt("ENTER YOUR Q. FOR  JEANS");
+            var shirt=500;Tshirt=300;jeans=1000;
+            var SH,TS,JE;
+            if(items1==2)
+            {
+                SH=shirt*2;
+                document.write("<br> Q. of shirts=",SH);
+            }
+            else{
+                document.write("<br> Q of shirt does bot satisfy")
+            }
+            if(items2==2)
+            {
+                TS=Tshirt*2;
+                document.write("<br> Q. of tshirts=",TS)
+            }
+            else{
+                document.write("<br> Q of tshirts does not satisfy")
+            }
+            if(items3==1)
+            {
+                JE=jeans*1;
+                document.write("<br> Q of Jeans=",JE);
+            }
+            else
+            {
+                document.write("<br> Q of jeans does not satisfy");
+            }
+            var GST=18/100;
+            var total;
+            var totGst;
+            var TOT;
+            total=SH+TS+JE;
+            document.write("<br> TOTAL AMT=",total)
+            totGst=total*GST;
+            document.write("<br> TOTAL PURCHASE=",totGst);
+            TOT=total+totGst;
+            document.write(" <br> TOTAL AMT WITH GST=",TOT);
+             
+        }
+
+        
+    </script>
+
+
+
+    
+</body>
+</html>
